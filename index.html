@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta name="author" content="Om Jaiswal" />
+        <meta name="description" content="Hi! I'm Om Jaiswal, I design and build User Interface (UI)." />
+
+        <title>Om Jaiswal | Personal Portfolio Site</title>
+
+        <link rel="icon" href="./favicon.png" type="image/x-icon" />
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="./assets/styles/bubbles.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+
+        <!-- emailjs cdn link  -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+            emailjs.init("user_95cS73QezFfc1kGxYFeTJ");
+        })();
+        </script>
+    </head>
+    <body>
+        <!-- header section starts  -->
+        <header>
+            <div class="user">
+                <img src="./assets/images/om.png" alt="Om Jaiswal's Profile Picture">
+                <h3 class="name">Om Jaiswal</h3>
+                <p class="post">Web developer</p>
+            </div>
+            <div class="social-container">
+                <ul class="social-icons">
+                    <li><a href="https://in.linkedin.com/in/om-jaiswal-a599b61b3"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Om-Jaiswal"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/Om__Jaiswal"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/om_jaiswal7"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home" class="colorfix">Home</a></li>
+                    <li><a href="#about" class="colorfix">About</a></li>
+                    <li><a href="#education" class="colorfix">Education</a></li>
+                    <li><a href="#experience" class="colorfix">Experience</a></li>
+                    <li><a href="#work" class="colorfix">Work</a></li>
+                    <li><a href="#contact" class="colorfix">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- header section ends -->
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <!-- home section starts  -->
+        <section class="home bubbles" id="home">
+            <div id="bubble-effect"></div>
+            <h3>Hi There!</h3>
+            <h1>I'm <span>Om Jaiswal</span></h1>
+    <pre id="typewriter">
+    const bio = {
+        profession : 'Web Developer',
+        languages : [ 'JavaScript', 'Python' ],
+        routine : function( ) {
+            eat( );
+            sleep( );
+            code( );
+        }
+    };
+    </pre>
+            <a href="#about"><button class="btn">About Me <i class="fas fa-user"></i></button></a>
+        </section>
+        <!-- home section ends -->
+
+        <!-- about section starts  -->
+        <section class="about" id="about">
+            <h1 class="heading"> <span>About</span> </h1>
+            <div class="row">
+                <div class="info">
+                    <p> 
+                       Hi! I'm Om Jaiswal, I am a Undergraduate Student living in India, currently pursuing my B. Tech. Degree in Information Technology.
+                    </p>
+                    <p>
+                       I am Mid-level Web developer able to convert requirements into exciting online applications. Skilled at writing well-designed, testable and efficient code using current best practices in Web development. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.
+                    </p>
+                    <p>
+                       Outside Tech, I love to read, enjoy music, travel and hung out with loved ones.
+                    </p>
+                    <a href="#"><button class="btn"> Download CV <i class="fas fa-download"></i> </button></a>
+                </div>
+                <div>
+                    <h2 class="skills-title">Skills</h2>
+                    <div class="skills">
+                        <div>
+                            <ul class="skills-bar-container">
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>HTML</h3>
+                                        <span class="percent" id="html-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-html"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>CSS</h3>
+                                        <span class="percent" id="css-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-css"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>Bootstrap</h3>
+                                        <span class="percent" id="bootstrap-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-bootstrap"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>JavaScript</h3>
+                                        <span class="percent" id="javascript-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-javascript"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>React</h3>
+                                        <span class="percent" id="react-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-react"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="skills-bar-container">
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>Express.js</h3>
+                                        <span class="percent" id="expressjs-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-expressjs"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>Python</h3>
+                                        <span class="percent" id="python-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-python"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>Django</h3>
+                                        <span class="percent" id="django-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-django"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>SQL</h3>
+                                        <span class="percent" id="sql-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-sql"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="progressbar-title">
+                                        <h3>Flutter</h3>
+                                        <span class="percent" id="flutter-percent"></span>
+                                    </div>
+                                    <div class="bar-container">
+                                        <span class="progressbar progressgradient" id="progress-flutter"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section ends -->
+
+        <!-- education section starts  -->
+        <section class="education" id="education">
+            <h1 class="heading"><span>Education</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2007-2017</span>
+                    <h3>St. Xavier's High School, Nagpur</h3>
+                    <p>Secondary School Certificate, General Studies</p>
+                    <p>Graduated Year : 2017</p>
+                    <p>Activities and Societies : Eco Club <br/> (Aimed at serving the Environment)</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2017-2019</span>
+                    <h3>Kamla Nehru College, Nagpur</h3>
+                    <p>Higher Secondary School Certificate, Science</p>
+                    <p>Graduated Year : 2019</p>
+                    <p>Vocational Subject : Information Technology (IT)</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2019-2023</span>
+                    <h3>G. H. Raisoni College of Engineering, Nagpur</h3>
+                    <p>Bachelor of Technology - BTech, Information Technology</p>
+                    <p>Graduation Year : 2023</p>
+                    <p>Minor Degree : Artificial Intelligence (AI)</p>
+                </div>
+            </div>
+            <div class="skills-container">
+                <h2 class="academic-title">Current Academic Score :</h2>
+                <div class="skills">
+                    <ul class="lines">
+                        <li class="line l-0">
+                            <span class="line-label title">CGPA :</span>
+                        </li>
+                        <li class="line l-10">
+                            <span class="line-label">1</span>
+                        </li>
+                        <li class="line l-20">
+                            <span class="line-label">2</span>
+                        </li>
+                        <li class="line l-30">
+                            <span class="line-label">3</span>
+                        </li>
+                        <li class="line l-40">
+                            <span class="line-label">4</span>
+                        </li>
+                        <li class="line l-50">
+                            <span class="line-label">5</span>
+                        </li>
+                        <li class="line l-60">
+                            <span class="line-label">6</span>
+                        </li>
+                        <li class="line l-70">
+                            <span class="line-label">7</span>
+                        </li>
+                        <li class="line l-80">
+                            <span class="line-label">8</span>
+                        </li>
+                        <li class="line l-90">
+                            <span class="line-label">9</span>
+                        </li>
+                        <li class="line l-100">
+                            <span class="line-label">10</span>
+                        </li>
+                    </ul>
+                    <div class="chart chart-sem">
+                        <ul class="chart-horiz">
+                            <li class="chart-bar" style="width: 92.2%;">
+                                <span class="chart-label">Semester-1</span>
+                            </li>
+                            <li class="chart-bar" style="width: 93.0%;">
+                                <span class="chart-label">Semester-2</span>
+                            </li>
+                            <li class="chart-bar" style="width: 93.6%;">
+                                <span class="chart-label">Semester-3</span>
+                            </li>
+                            <li class="chart-bar" style="width: 92.6%;">
+                                <span class="chart-label">Semester-4</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- education section ends -->
+
+        
+        <!-- experience section starts  -->
+        <section class="experience" id="experience">
+            <h1 class="heading"><span>Experience</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Sep 2021 - Present</span>
+                    <h3>Product Developer</h3>
+                    <p>mindZcloud Technologies</p>
+                    <p>Develop & enhance the existing or new products in order to meet the customer expectations effectively, and conduct research to develop proposals.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Jan 2021 - Present</span>
+                    <h3>ExCom Member</h3>
+                    <p>IEEE CIS Student Chapter - GHRCE</p>
+                    <p>Work as a web developer & ensures that all decisions are taken in the best interests of the organisation, and that their role is carried out effectively.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-user-cog"></i>
+                    <span>Jun 2021 - Jul 2021</span>
+                    <h3>Data Scientist</h3>
+                    <p>The Spark Foundation</p>
+                    <p>Analyzed, processed, and modeled data then interpreted the results to create actionable plans, & studied a variety of data across a broad range of application domains.</p>
+                </div>
+                <div class="box">
+                    <i class="fas fa-user-cog"></i>
+                    <span>May 2021 - Jun 2021</span>
+                    <h3>Content Writer</h3>
+                    <p>Samagra Foundation</p>
+                    <p>Developed content that accurately reflects NGO ideals to make a positive and enduring change in the communities living in wretched destitution and undue imbalance.</p>
+                </div>
+            </div>
+        </section>
+        <!-- experience section ends -->
+
+        <!-- portfolio section starts  -->
+        <section class="work" id="work">
+            <h1 class="heading"> <span>Work</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+                <div class="box">
+                    <img src="./assets/images/demo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- portfolio section ends -->
+
+        <!-- contact section starts  -->
+        <section class="contact" id="contact">
+            <h1 class="heading"> <span>Contact</span> </h1>
+            <div class="row">
+                <div class="content">
+                    <h3 class="title">Contact Info</h3>
+                    <div class="info">
+                        <h3> <i class="fas fa-envelope"></i> om_jaiswal@outlook.com </h3>
+                        <h3> <i class="fas fa-map-marker-alt"></i> &nbsp;Nagpur, Maharashtra, India </h3>
+                    </div>
+                </div>
+                <form>
+                    <input type="text" id="name" placeholder="name" class="box">
+                    <input type="email" id="email" placeholder="email" class="box">
+                    <input type="text" id="subject" placeholder="subject" class="box">
+                    <textarea id="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                    <button type="submit" onclick="sendMail()" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
+                </form>
+            </div>
+        </section>
+        <!-- contact section ends -->
+
+        <!-- scroll top button  -->
+        <a href="#home" class="top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- custom js file link  -->
+        <script src="./assets/scripts/script.js"></script>
+    </body>
+</html>
