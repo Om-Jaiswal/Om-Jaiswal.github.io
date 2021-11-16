@@ -126,18 +126,3 @@ $.each(lang, function(language, percent) {
   delay*multiply);
   multiply++;
 });
-
-// Contact
-function sendMail(params){
-  let tempParams = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    subject: document.getElementById("subject").value,
-    message: document.getElementById("message").value,
-  };
-
-  emailjs.send('gmail', 'template_ua0wt3i', tempParams)
-  .then(function(res){
-    console.log("success", res.status);
-  })
-}

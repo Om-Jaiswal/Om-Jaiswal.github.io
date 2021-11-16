@@ -16,14 +16,6 @@
         <!-- custom css file link  -->
         <link rel="stylesheet" href="./assets/styles/bubbles.css">
         <link rel="stylesheet" href="./assets/styles/style.css">
-
-        <!-- emailjs cdn link  -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-        (function() {
-            emailjs.init("user_95cS73QezFfc1kGxYFeTJ");
-        })();
-        </script>
     </head>
     <body>
         <!-- header section starts  -->
@@ -361,12 +353,12 @@
                         <h3> <i class="fas fa-map-marker-alt"></i> &nbsp;Nagpur, Maharashtra, India </h3>
                     </div>
                 </div>
-                <form>
-                    <input type="text" id="name" placeholder="name" class="box">
-                    <input type="email" id="email" placeholder="email" class="box">
-                    <input type="text" id="subject" placeholder="subject" class="box">
-                    <textarea id="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-                    <button type="submit" onclick="sendMail()" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
+                <form action="">
+                    <input type="text" placeholder="name" class="box">
+                    <input type="email" placeholder="email" class="box">
+                    <input type="text" placeholder="subject" class="box">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                    <button type="submit" class="btn"> Send <i class="fas fa-paper-plane"></i> </button>
                 </form>
             </div>
         </section>
