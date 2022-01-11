@@ -970,7 +970,7 @@ header .navbar ul li a:hover {
     height: 100%;
     left: 0;
     position: absolute;
-    top: 10px;
+    top: 0px;
     width: 100%;
     z-index: 10;
 }
@@ -991,6 +991,10 @@ header .navbar ul li a:hover {
     height: 15px;
     margin-bottom: 10px;
     opacity: 0;
+}
+
+.education .skills-container .skills .chart .chart-horiz .chart-bar:nth-of-type(5) {
+    animation-delay: 1.5s;
 }
 
 .education .skills-container .skills .chart .chart-horiz .chart-bar:nth-of-type(4) {
